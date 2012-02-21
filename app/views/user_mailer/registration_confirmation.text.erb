@@ -1,0 +1,3 @@
+<%= @user.name %>,
+
+Thank you for registering!
