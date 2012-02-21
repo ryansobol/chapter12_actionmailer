@@ -1,4 +1,4 @@
-# Chapter 12: ActiveMailer in Rails 3.2
+# Chapter 12: ActionMailer in Rails 3.2
 
 ### Clone Heroku's Cedar Platform Locally with RVM
 
