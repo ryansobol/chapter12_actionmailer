@@ -17,3 +17,14 @@
     rails g scaffold user name:string email:string
     rake db:migrate
     rm public/index.html
+
+### Configure Heroku's Cedar Platform
+
+    heroku create --stack cedar --remote production --addons sendgrid:starter
+    heroku config:add --app [NAME] MAIL_FROM=[EMAIL_ADDRESS]
+    git add .
+    git commit
+    git push production master
+    heroku run rake db:migrate --app [NAME]
+    heroku open
+    heroku config --app [NAME] | grep SENDGRID
